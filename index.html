@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width">
 
     <title>test</title>
-    <script src="main.js"></script>
+    
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
     
 <body>
@@ -17,8 +18,8 @@
             <h1 class="title">What is the most important thing to you right now?</h1>
             <p>Type in and enter a reminder for yourself</p>
         </header>
-        <input id="usersChoice" autofocus type="text" placeholder="For example, 'focus on establishing revenue!'">
+        <input id="usersChoice" autofocus type="text" onkeypress="return displayThanks(event)" placeholder="For example, 'focus on establishing revenue!'">
+        <p id="message"></p>
     </div>
 </body>
-    
 </html>
