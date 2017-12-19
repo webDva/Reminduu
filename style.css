@@ -28,7 +28,12 @@ html, body {
 }
 
 .site-head p {
+    font-size: 1.6em;
+}
+
+p {
     font-size: 1.3em;
+    font-family: sans-serif;
 }
     
 input {
