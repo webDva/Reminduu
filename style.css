@@ -1,0 +1,68 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #BF702E;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.site-head {
+    padding: 1.4rem 2rem;
+    text-align: center;
+    margin-top: 6rem;
+    font-family: Verdana;
+}
+
+.site-head .title {
+    position: relative;
+    display: inline-block;
+    font-weight: 900;
+}
+
+.site-head p {
+    font-size: 1.3em;
+}
+    
+input {
+    background-color: transparent;
+    color: white;
+    /*border: 0px solid transparent;*/
+    
+    margin: 1.8em auto;
+    margin-top: 1em;
+    width: 80%;
+    caret-color: snow;
+    font-size: 2em;
+    padding: 0.8em;
+    border: solid transparent;
+    border-bottom: solid snow;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: darkgray;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: darkgray;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: darkgray;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
