@@ -11,13 +11,17 @@ if(localStorage.getItem('reminder')) {
 
 function displayThanks(event) {
     if (event.keyCode == 13) {
-        localStorage.setItem('reminder', document.getElementById('usersReminder').value);
-        document.getElementById("message").innerHTML = "📓 Thanks, baka, I'll remind you the next time you visit this page. 📓";
+        remember();
         return false;
     } 
     else {
         return true;
     }
+}
+
+function remember() {
+    localStorage.setItem('reminder', document.getElementById('usersReminder').value);
+    document.getElementById("message").innerHTML = "📓 Thanks, baka, I'll remind you the next time you visit this page. 📓";    
 }
 
 function storageAvailable(type) {
