@@ -16,9 +16,10 @@
     <div class="container">
         <header class="site-head">
             <h1 class="title">What is the most important thing to you right now?</h1>
-            <p>Type something that you want to remember and then press enter</p>
+            <p>Type something that you want to remember</p>
         </header>
-        <input id="usersReminder" autofocus type="text" onkeypress="return displayThanks(event)" placeholder="For example, 'focus on establishing revenue!'">
+        <input id="usersReminder" autofocus spellcheck="false" type="text" onkeypress="return displayThanks(event)" placeholder="For example, 'focus on establishing revenue!'">
+        <button onclick="remember()">Reminduu</button>
         <p id="message"></p>
     </div>
 <script src="main.js"></script>
